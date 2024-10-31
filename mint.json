@@ -105,9 +105,34 @@
       ]
     }
   ],
-  "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
-  }
+"footer": {
+  "socials": {
+    "github": "https://github.com/yourusername",
+    "x": "https://x.com/yourusername",
+    "linkedin": "https://linkedin.com/company/yourcompany"
+  },
+  "links": [
+    {
+      "title": "Product",
+      "links": [
+        { "label": "Features", "url": "/features" },
+        { "label": "Pricing", "url": "/pricing" }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        { "label": "Documentation", "url": "/docs" },
+        { "label": "API Reference", "url": "/api" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About Us", "url": "/about" },
+        { "label": "Contact", "url": "/contact" }
+      ]
+    }
+  ]
+}
 }
