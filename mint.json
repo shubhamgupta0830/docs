@@ -15,16 +15,34 @@
       "to": "#07C983"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Resources",
-      "url": "mailto:hi@mintlify.com"
-    },
-    {
-      "name": "Community",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+ "topbarLinks": [
+  {
+    "name": "Resources",
+    "children": [
+      {
+        "name": "Documentation",
+        "url": "/docs"
+      },
+      {
+        "name": "API Reference",
+        "url": "/api"
+      }
+    ]
+  },
+  {
+    "name": "Community",
+    "children": [
+      {
+        "name": "Forum",
+        "url": "https://forum.example.com"
+      },
+      {
+        "name": "Discord",
+        "url": "https://discord.gg/example"
+      }
+    ]
+  }
+],
   "topbarCtaButton": {
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
