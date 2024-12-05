@@ -1,0 +1,3320 @@
+# tabsdatasdk package
+
+## Subpackages
+
+* [tabsdatasdk.api package](tabsdatasdk.api.md)
+  * [Submodules](tabsdatasdk.api.md#submodules)
+  * [tabsdatasdk.api.api_server module](tabsdatasdk.api.md#module-tabsdatasdk.api.api_server)
+    * [`APIServer`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer)
+      * [`APIServer.authentication_access()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.authentication_access)
+      * [`APIServer.authentication_header`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.authentication_header)
+      * [`APIServer.authentication_refresh()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.authentication_refresh)
+      * [`APIServer.dataset_create()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_create)
+      * [`APIServer.dataset_delete()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_delete)
+      * [`APIServer.dataset_execute()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_execute)
+      * [`APIServer.dataset_get()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_get)
+      * [`APIServer.dataset_in_datastore_list()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_in_datastore_list)
+      * [`APIServer.dataset_list_functions()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_list_functions)
+      * [`APIServer.dataset_show_current_function()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_show_current_function)
+      * [`APIServer.dataset_update()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_update)
+      * [`APIServer.dataset_upload_function_bundle()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.dataset_upload_function_bundle)
+      * [`APIServer.datastore_create()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.datastore_create)
+      * [`APIServer.datastore_delete()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.datastore_delete)
+      * [`APIServer.datastore_get_by_name()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.datastore_get_by_name)
+      * [`APIServer.datastore_list()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.datastore_list)
+      * [`APIServer.datastore_update()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.datastore_update)
+      * [`APIServer.delete()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.delete)
+      * [`APIServer.execution_plan_list()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.execution_plan_list)
+      * [`APIServer.get()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.get)
+      * [`APIServer.get_params_dict()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.get_params_dict)
+      * [`APIServer.post()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.post)
+      * [`APIServer.post_binary()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.post_binary)
+      * [`APIServer.raise_for_status()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.raise_for_status)
+      * [`APIServer.raise_for_status_or_return()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.raise_for_status_or_return)
+      * [`APIServer.status_get()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.status_get)
+      * [`APIServer.table_get_by_id()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.table_get_by_id)
+      * [`APIServer.table_list_all()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.table_list_all)
+      * [`APIServer.users_create()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.users_create)
+      * [`APIServer.users_delete()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.users_delete)
+      * [`APIServer.users_get_by_name()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.users_get_by_name)
+      * [`APIServer.users_list()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.users_list)
+      * [`APIServer.users_update()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServer.users_update)
+    * [`APIServerError`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError)
+    * [`obtain_connection()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.obtain_connection)
+    * [`process_url()`](tabsdatasdk.api.md#tabsdatasdk.api.api_server.process_url)
+  * [tabsdatasdk.api.tabsdata_server module](tabsdatasdk.api.md#module-tabsdatasdk.api.tabsdata_server)
+    * [`Dataset`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Dataset)
+      * [`Dataset.created_on_string`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Dataset.created_on_string)
+    * [`Datastore`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Datastore)
+      * [`Datastore.created_on_string`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Datastore.created_on_string)
+    * [`ExecutionPlan`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan)
+      * [`ExecutionPlan.STATUS_MAPPING`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan.STATUS_MAPPING)
+      * [`ExecutionPlan.triggered_on_str`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan.triggered_on_str)
+      * [`ExecutionPlan.ended_on_str`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan.ended_on_str)
+      * [`ExecutionPlan.started_on_str`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan.started_on_str)
+      * [`ExecutionPlan.STATUS_MAPPING`](tabsdatasdk.api.md#id0)
+      * [`ExecutionPlan.status_to_mapping()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan.status_to_mapping)
+    * [`Function`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Function)
+      * [`Function.created_on_string`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Function.created_on_string)
+    * [`ServerStatus`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ServerStatus)
+    * [`TabsdataServer`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer)
+      * [`TabsdataServer.dataset_create()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.dataset_create)
+      * [`TabsdataServer.dataset_delete()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.dataset_delete)
+      * [`TabsdataServer.dataset_get()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.dataset_get)
+      * [`TabsdataServer.dataset_list_functions()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.dataset_list_functions)
+      * [`TabsdataServer.dataset_trigger()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.dataset_trigger)
+      * [`TabsdataServer.dataset_update()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.dataset_update)
+      * [`TabsdataServer.datastore_create()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.datastore_create)
+      * [`TabsdataServer.datastore_delete()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.datastore_delete)
+      * [`TabsdataServer.datastore_get()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.datastore_get)
+      * [`TabsdataServer.datastore_list_dataset()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.datastore_list_dataset)
+      * [`TabsdataServer.datastore_update()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.datastore_update)
+      * [`TabsdataServer.datastores`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.datastores)
+      * [`TabsdataServer.execution_plans`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.execution_plans)
+      * [`TabsdataServer.status`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.status)
+      * [`TabsdataServer.user_create()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.user_create)
+      * [`TabsdataServer.user_delete()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.user_delete)
+      * [`TabsdataServer.user_get()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.user_get)
+      * [`TabsdataServer.user_update()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.user_update)
+      * [`TabsdataServer.users`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.TabsdataServer.users)
+    * [`User`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.User)
+    * [`calculate_file_sha256()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.calculate_file_sha256)
+    * [`convert_timestamp_to_string()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.convert_timestamp_to_string)
+    * [`create_archive_and_hash()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.create_archive_and_hash)
+    * [`dynamic_import_function_from_path()`](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.dynamic_import_function_from_path)
+  * [Module contents](tabsdatasdk.api.md#module-tabsdatasdk.api)
+* [tabsdatasdk.cli package](tabsdatasdk.cli.md)
+  * [Submodules](tabsdatasdk.cli.md#submodules)
+  * [tabsdatasdk.cli.cli module](tabsdatasdk.cli.md#module-tabsdatasdk.cli.cli)
+  * [tabsdatasdk.cli.cli_utils module](tabsdatasdk.cli.md#module-tabsdatasdk.cli.cli_utils)
+    * [`MutuallyExclusiveOption`](tabsdatasdk.cli.md#tabsdatasdk.cli.cli_utils.MutuallyExclusiveOption)
+      * [`MutuallyExclusiveOption.handle_parse_result()`](tabsdatasdk.cli.md#tabsdatasdk.cli.cli_utils.MutuallyExclusiveOption.handle_parse_result)
+    * [`beautify_list()`](tabsdatasdk.cli.md#tabsdatasdk.cli.cli_utils.beautify_list)
+    * [`logical_prompt()`](tabsdatasdk.cli.md#tabsdatasdk.cli.cli_utils.logical_prompt)
+  * [tabsdatasdk.cli.dataset_group module](tabsdatasdk.cli.md#module-tabsdatasdk.cli.dataset_group)
+  * [tabsdatasdk.cli.datastore_group module](tabsdatasdk.cli.md#module-tabsdatasdk.cli.datastore_group)
+  * [tabsdatasdk.cli.execution_plan_group module](tabsdatasdk.cli.md#module-tabsdatasdk.cli.execution_plan_group)
+  * [tabsdatasdk.cli.user_group module](tabsdatasdk.cli.md#module-tabsdatasdk.cli.user_group)
+  * [Module contents](tabsdatasdk.cli.md#module-tabsdatasdk.cli)
+* [tabsdatasdk.tabsdataframe package](tabsdatasdk.tabsdataframe.md)
+  * [Submodules](tabsdatasdk.tabsdataframe.md#submodules)
+  * [tabsdatasdk.tabsdataframe.annotation module](tabsdatasdk.tabsdataframe.md#module-tabsdatasdk.tabsdataframe.annotation)
+    * [`Status`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status)
+      * [`Status.DELAYED`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status.DELAYED)
+      * [`Status.DOING`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status.DOING)
+      * [`Status.DONE`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status.DONE)
+      * [`Status.TESTED`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status.TESTED)
+      * [`Status.TESTING`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status.TESTING)
+      * [`Status.TODO`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.Status.TODO)
+    * [`status()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.annotation.status)
+  * [tabsdatasdk.tabsdataframe.constants module](tabsdatasdk.tabsdataframe.md#module-tabsdatasdk.tabsdataframe.constants)
+    * [`SystemColumns`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.constants.SystemColumns)
+      * [`SystemColumns.TD_ID`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.constants.SystemColumns.TD_ID)
+      * [`SystemColumns.TD_SRC`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.constants.SystemColumns.TD_SRC)
+  * [tabsdatasdk.tabsdataframe.frame module](tabsdatasdk.tabsdataframe.md#tabsdatasdk-tabsdataframe-frame-module)
+  * [tabsdatasdk.tabsdataframe.group module](tabsdatasdk.tabsdataframe.md#module-tabsdatasdk.tabsdataframe.group)
+    * [`TabsDataLazyGroupBy`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy)
+      * [`TabsDataLazyGroupBy.agg()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.agg)
+      * [`TabsDataLazyGroupBy.all()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.all)
+      * [`TabsDataLazyGroupBy.count()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.count)
+      * [`TabsDataLazyGroupBy.first()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.first)
+      * [`TabsDataLazyGroupBy.head()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.head)
+      * [`TabsDataLazyGroupBy.last()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.last)
+      * [`TabsDataLazyGroupBy.len()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.len)
+      * [`TabsDataLazyGroupBy.max()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.max)
+      * [`TabsDataLazyGroupBy.mean()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.mean)
+      * [`TabsDataLazyGroupBy.median()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.median)
+      * [`TabsDataLazyGroupBy.min()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.min)
+      * [`TabsDataLazyGroupBy.n_unique()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.n_unique)
+      * [`TabsDataLazyGroupBy.quantile()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.quantile)
+      * [`TabsDataLazyGroupBy.sum()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.sum)
+      * [`TabsDataLazyGroupBy.tail()`](tabsdatasdk.tabsdataframe.md#tabsdatasdk.tabsdataframe.group.TabsDataLazyGroupBy.tail)
+  * [tabsdatasdk.tabsdataframe.reflection module](tabsdatasdk.tabsdataframe.md#tabsdatasdk-tabsdataframe-reflection-module)
+  * [Module contents](tabsdatasdk.tabsdataframe.md#module-tabsdatasdk.tabsdataframe)
+* [tabsdatasdk.utils package](tabsdatasdk.utils.md)
+  * [Submodules](tabsdatasdk.utils.md#submodules)
+  * [tabsdatasdk.utils.bundle_utils module](tabsdatasdk.utils.md#module-tabsdatasdk.utils.bundle_utils)
+    * [`SaveTarget`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.SaveTarget)
+      * [`SaveTarget.FILE`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.SaveTarget.FILE)
+      * [`SaveTarget.FOLDER`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.SaveTarget.FOLDER)
+    * [`bundle_local_packages()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.bundle_local_packages)
+    * [`convert_to_dict_and_store_if_plugin()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.convert_to_dict_and_store_if_plugin)
+    * [`copy_and_verify_requirements_file()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.copy_and_verify_requirements_file)
+    * [`create_bundle_archive()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.create_bundle_archive)
+    * [`create_configuration()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.create_configuration)
+    * [`create_input_configuration()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.create_input_configuration)
+    * [`create_output_configuration()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.create_output_configuration)
+    * [`create_requirements()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.create_requirements)
+    * [`create_tarball()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.create_tarball)
+    * [`generate_entry_point_field()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.generate_entry_point_field)
+    * [`obtain_ordered_dists()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.obtain_ordered_dists)
+    * [`store_file_contents()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.store_file_contents)
+    * [`store_folder_contents()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.store_folder_contents)
+    * [`store_function_codebase()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.store_function_codebase)
+    * [`store_pickled_function()`](tabsdatasdk.utils.md#tabsdatasdk.utils.bundle_utils.store_pickled_function)
+  * [Module contents](tabsdatasdk.utils.md#module-tabsdatasdk.utils)
+
+## Submodules
+
+## tabsdatasdk.credentials module
+
+### *class* tabsdatasdk.credentials.CredentialIdentifier(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+#### S3_ACCESS_KEY_CREDENTIALS *= 's3_access_key-credentials'*
+
+#### USER_PASSWORD_CREDENTIALS *= 'user_password-credentials'*
+
+### *class* tabsdatasdk.credentials.Credentials
+
+Bases: `ABC`
+
+Credentials class to store the credentials needed to access different
+services.
+
+#### *abstract* to_dict() → dict
+
+Convert the credentials object to a dictionary.
+
+### *class* tabsdatasdk.credentials.S3AccessKeyCredentials(aws_access_key_id: str | dict | [Secret](#tabsdatasdk.secret.Secret), aws_secret_access_key: str | dict | [Secret](#tabsdatasdk.secret.Secret))
+
+Bases: [`S3Credentials`](#tabsdatasdk.credentials.S3Credentials)
+
+Credentials class to store the credentials needed to access an S3 bucket
+using access key credentials (access key id and secret access key).
+
+#### aws_access_key_id
+
+The AWS access key id.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### aws_secret_access_key
+
+The AWS secret access key.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the S3AccessKeyCredentials object to a dictionary
+
+#### AWS_ACCESS_KEY_ID_KEY *= 'aws_access_key_id'*
+
+#### AWS_SECRET_ACCESS_KEY_KEY *= 'aws_secret_access_key'*
+
+#### IDENTIFIER *= 's3_access_key-credentials'*
+
+#### *property* aws_access_key_id *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The AWS access key id.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### *property* aws_secret_access_key *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The AWS secret access key.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the S3AccessKeyCredentials object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the S3AccessKeyCredentials object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.credentials.S3Credentials
+
+Bases: [`Credentials`](#tabsdatasdk.credentials.Credentials), `ABC`
+
+Credentials class to store the credentials needed to access an S3 bucket.
+
+### *class* tabsdatasdk.credentials.UserPasswordCredentials(user: str | dict | [Secret](#tabsdatasdk.secret.Secret), password: str | dict | [Secret](#tabsdatasdk.secret.Secret))
+
+Bases: [`Credentials`](#tabsdatasdk.credentials.Credentials)
+
+Credentials class to store a user and password pair.
+
+#### user
+
+The user.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### password
+
+The password.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the UserPasswordCredentials object to a dictionary.
+
+#### IDENTIFIER *= 'user_password-credentials'*
+
+#### PASSWORD_KEY *= 'password'*
+
+#### USER_KEY *= 'user'*
+
+#### *property* password *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The password.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the UserPasswordCredentials object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the UserPasswordCredentials object.
+* **Return type:**
+  dict
+
+#### *property* user *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The user.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+### tabsdatasdk.credentials.build_credentials(configuration: dict | [Credentials](#tabsdatasdk.credentials.Credentials)) → [Credentials](#tabsdatasdk.credentials.Credentials)
+
+Builds a Credentials object from a dictionary or a Credentials object.
+:return: A Credentials object.
+
+## tabsdatasdk.datasetfunction module
+
+### *class* tabsdatasdk.datasetfunction.DatasetFunction(func: Callable, dataset_name: str, input: dict | [Input](#tabsdatasdk.datasetfunction.Input) | [InputPlugin](#tabsdatasdk.plugin.InputPlugin) = None, output: dict | [Output](#tabsdatasdk.datasetfunction.Output) | [OutputPlugin](#tabsdatasdk.plugin.OutputPlugin) = None, trigger_by: str | [URI](#tabsdatasdk.uri.URI) | None = None)
+
+Bases: `object`
+
+Class to decorate a function with metadata and methods for use in a TabsData
+: environment.
+
+Attributes:
+
+#### *property* dataset_name *: str*
+
+The name of the dataset that the function will be registered to.
+
+* **Type:**
+  str
+
+#### *property* input *: [Input](#tabsdatasdk.datasetfunction.Input) | [InputPlugin](#tabsdatasdk.plugin.InputPlugin) | None*
+
+The data to be used when running the function.
+
+* **Type:**
+  [Input](#tabsdatasdk.datasetfunction.Input) | [InputPlugin](#tabsdatasdk.plugin.InputPlugin) | None
+
+#### *property* original_file
+
+The file where the original function is defined in the user’s computer
+
+* **Type:**
+  str
+
+#### *property* original_folder *: str*
+
+The folder where the original function is defined, as a local path in the
+user’s computer.
+
+* **Type:**
+  str
+
+#### *property* original_function *: Callable*
+
+The original function that was decorated, without any behaviour
+modifications.
+
+* **Type:**
+  Callable
+
+#### *property* output *: [Output](#tabsdatasdk.datasetfunction.Output) | [OutputPlugin](#tabsdatasdk.plugin.OutputPlugin) | None*
+
+The location where the function results will be saved when run.
+
+* **Type:**
+  dict
+
+#### *property* trigger_by *: [URI](#tabsdatasdk.uri.URI) | None*
+
+The trigger that will cause the function to execute. It must be
+another dataset in the system.
+
+* **Type:**
+  [URI](#tabsdatasdk.uri.URI) | None
+
+### *class* tabsdatasdk.datasetfunction.Input
+
+Bases: `ABC`
+
+Abstract base class for managing data input configurations.
+
+#### *abstract* to_dict() → dict
+
+Convert the Input object to a dictionary with all
+: the relevant information.
+
+* **Returns:**
+  A dictionary with the relevant information of the Input
+  : object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.datasetfunction.InputIdentifiers(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the identifiers of the different types of data inputs.
+
+#### LOCALFILE *= 'localfile-input'*
+
+#### MYSQL *= 'mysql-input'*
+
+#### S3 *= 's3-input'*
+
+#### TABLE *= 'table-input'*
+
+### *class* tabsdatasdk.datasetfunction.LocalFileInput(path: str | List[str], format: str | dict | [FileFormat](#tabsdatasdk.format.FileFormat) = None, initial_last_modified: str | datetime = None)
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of local-file-based data inputs.
+
+#### format
+
+The format of the file. If not provided, it will be
+inferred from the file extension of the data.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### path
+
+The path where the files can be found. It can be a
+single path or a list of paths.
+
+* **Type:**
+  str | List[str]
+
+#### initial_last_modified
+
+If not None, only the files modified after
+this date and time will be considered.
+
+* **Type:**
+  str | None
+
+#### to_dict()
+
+Converts the LocalFileInput object to a dictionary.
+
+#### FORMAT_KEY *= 'format'*
+
+#### IDENTIFIER *= 'localfile-input'*
+
+#### LAST_MODIFIED_KEY *= 'initial_last_modified'*
+
+#### PATH_KEY *= 'path'*
+
+#### *class* SupportedFormats(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the supported formats for the LocalFileInput.
+
+#### csv *= <class 'tabsdatasdk.format.CSVFormat'>*
+
+#### json *= <class 'tabsdatasdk.format.NDJSONFormat'>*
+
+#### log *= <class 'tabsdatasdk.format.LogFormat'>*
+
+#### parquet *= <class 'tabsdatasdk.format.ParquetFormat'>*
+
+#### *property* format *: [FileFormat](#tabsdatasdk.format.FileFormat)*
+
+The format of the file or files. If not provided, it will be
+inferred  from the file extension in the path.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### *property* initial_last_modified *: str*
+
+The date and time after which the files were modified.
+
+* **Type:**
+  str
+
+#### *property* path *: str | List[str]*
+
+The path or paths to the files to load.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the LocalFileInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the LocalFileInput
+  : object: path, format, and initial_last_modified.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.datasetfunction.MySQLInput(uri: str, query: str | List[str], credentials: dict | [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) | None = None, initial_values: dict | None = None)
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of MySQL-based data inputs.
+
+#### credentials
+
+The credentials required to access the
+MySQL database.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials)
+
+#### initial_values
+
+The initial values for the parameters in the SQL queries.
+
+* **Type:**
+  dict
+
+#### query
+
+The SQL query(s) to execute. If multiple queries are
+provided, they must be provided as a dictionary, with the parameter name in
+the registered function as the key and the SQL query as the value.
+
+* **Type:**
+  str | List[str]
+
+#### uri
+
+The URI of the database where the data is located.
+
+* **Type:**
+  str
+
+#### to_dict()
+
+Converts the MySQLInput object to a dictionary.
+
+#### CREDENTIALS_KEY *= 'credentials'*
+
+#### IDENTIFIER *= 'mysql-input'*
+
+#### INITIAL_VALUES_KEY *= 'initial_values'*
+
+#### QUERY_KEY *= 'query'*
+
+#### URI_KEY *= 'uri'*
+
+#### *property* credentials *: [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) | None*
+
+The credentials required to access the
+MySQLDatabase. If no credentials were provided, it will return None.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) | None
+
+#### *property* initial_values *: dict*
+
+The initial values for the parameters in the SQL queries.
+
+* **Type:**
+  dict
+
+#### *property* query *: str | List[str]*
+
+The SQL query(s) to execute.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the MySQLInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the MySQLInput
+  : object: URI, data, and configurations.
+* **Return type:**
+  dict
+
+#### *property* uri *: str*
+
+The URI of the database where the data is located.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.datasetfunction.MySQLOutput(uri: str, destination_table: List[str] | str, credentials: dict | [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) = None)
+
+Bases: [`Output`](#tabsdatasdk.datasetfunction.Output)
+
+Class for managing the configuration of MySQL-based data outputs.
+
+#### credentials
+
+The credentials required to access the
+MySQL database.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials)
+
+#### destination_table
+
+The table(s) to create. If multiple tables
+are provided, they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### uri
+
+The URI of the database where the data is going to be stored.
+
+* **Type:**
+  str
+
+#### to_dict()
+
+Converts the MySQLOutput object to a dictionary
+
+#### CREDENTIALS_KEY *= 'credentials'*
+
+#### DESTINATION_TABLE_KEY *= 'destination_table'*
+
+#### IDENTIFIER *= 'mysql-output'*
+
+#### URI_KEY *= 'uri'*
+
+#### *property* credentials *: [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials)*
+
+The credentials required to access the MySQLDatabase.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials)
+
+#### *property* destination_table *: str | List[str]*
+
+The table(s) to create. If multiple tables are provided,
+they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the MySQLOutput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the MySQLOutput
+  : object: URI, destination table, and credentials.
+* **Return type:**
+  dict
+
+#### *property* uri *: str*
+
+The URI of the database where the data is going to be stored.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.datasetfunction.Output
+
+Bases: `ABC`
+
+Abstract base class for managing data output configurations.
+
+#### *abstract* to_dict() → dict
+
+Convert the Output object to a dictionary with all
+: the relevant information.
+
+* **Returns:**
+  A dictionary with the relevant information of the Output
+  : object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.datasetfunction.OutputIdentifiers(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the identifiers of the different types of data outputs.
+
+#### MYSQL *= 'mysql-output'*
+
+#### TABLE *= 'table-output'*
+
+### *class* tabsdatasdk.datasetfunction.S3Input(uri: str | List[str], credentials: dict | [S3Credentials](#tabsdatasdk.credentials.S3Credentials), format: str | dict | [FileFormat](#tabsdatasdk.format.FileFormat) = None, initial_last_modified: str | datetime = None)
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of S3-file-based data inputs.
+
+#### format
+
+The format of the file. If not provided, it will be
+inferred from the file extension of the data.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### uri
+
+The URI of the files with format: ‘s3://path/to/files’.
+It can be a single URI or a list of URIs.
+
+* **Type:**
+  str | List[str]
+
+#### credentials
+
+The credentials required to access the S3 bucket.
+
+* **Type:**
+  [S3Credentials](#tabsdatasdk.credentials.S3Credentials)
+
+#### initial_last_modified
+
+If provided, only the files
+modified after this date and time will be considered.
+
+* **Type:**
+  str | datetime.datetime
+
+#### to_dict()
+
+Converts the S3Input object to a dictionary.
+
+#### CREDENTIALS_KEY *= 'credentials'*
+
+#### FORMAT_KEY *= 'format'*
+
+#### IDENTIFIER *= 's3-input'*
+
+#### LAST_MODIFIED_KEY *= 'initial_last_modified'*
+
+#### *class* SupportedFormats(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the supported formats for the S3Input.
+
+#### csv *= <class 'tabsdatasdk.format.CSVFormat'>*
+
+#### json *= <class 'tabsdatasdk.format.NDJSONFormat'>*
+
+#### log *= <class 'tabsdatasdk.format.LogFormat'>*
+
+#### parquet *= <class 'tabsdatasdk.format.ParquetFormat'>*
+
+#### URI_KEY *= 'uri'*
+
+#### *property* credentials *: [S3Credentials](#tabsdatasdk.credentials.S3Credentials)*
+
+The credentials required to access the S3 bucket.
+
+* **Type:**
+  [S3Credentials](#tabsdatasdk.credentials.S3Credentials)
+
+#### *property* format *: [FileFormat](#tabsdatasdk.format.FileFormat)*
+
+The format of the file. If not provided, it will be inferred from
+the file.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### *property* initial_last_modified *: str*
+
+The date and time after which the files were modified.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Converts the FileInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the S3Input
+  : object: URI, format, credentials and last_modified time.
+* **Return type:**
+  dict
+
+#### *property* uri *: str | List[str]*
+
+‘s3://path/to/files’.
+
+* **Type:**
+  str | List[str]
+* **Type:**
+  The URI of the files with format
+
+### *class* tabsdatasdk.datasetfunction.TableInput(uri: str | List[str] | [URI](#tabsdatasdk.uri.URI) | List[[URI](#tabsdatasdk.uri.URI)])
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of table-based data inputs.
+
+#### uri
+
+The URI(s) of the table(s) to load.
+
+* **Type:**
+  [URI](#tabsdatasdk.uri.URI) | List[[URI](#tabsdatasdk.uri.URI)]
+
+#### to_dict()
+
+Converts the TableInput object to a dictionary.
+
+#### IDENTIFIER *= 'table-input'*
+
+#### URI_KEY *= 'uri'*
+
+#### to_dict() → dict
+
+Converts the TableInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the Output
+  : object.
+* **Return type:**
+  dict
+
+#### *property* uri *: [URI](#tabsdatasdk.uri.URI) | List[[URI](#tabsdatasdk.uri.URI)]*
+
+The URI(s) of the table(s) to load.
+
+* **Type:**
+  [URI](#tabsdatasdk.uri.URI) | List[[URI](#tabsdatasdk.uri.URI)]
+
+### *class* tabsdatasdk.datasetfunction.TableOutput(table: str | List[str])
+
+Bases: [`Output`](#tabsdatasdk.datasetfunction.Output)
+
+Class for managing the configuration of table-based data outputs.
+
+#### table
+
+The table(s) to create. If multiple tables are
+provided, they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict()
+
+Converts the TableOutput object to a dictionary
+
+#### IDENTIFIER *= 'table-output'*
+
+#### TABLE_KEY *= 'table'*
+
+#### *property* table *: str | List[str]*
+
+The table(s) to create. If multiple tables are provided,
+they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the TableOutput object to a dictionary with all the relevant
+information.
+
+### tabsdatasdk.datasetfunction.build_input(input: dict | [Input](#tabsdatasdk.datasetfunction.Input) | None) → [Input](#tabsdatasdk.datasetfunction.Input) | None
+
+Builds an Input object.
+
+* **Parameters:**
+  **input** (*dict* *|* [*Input*](#tabsdatasdk.datasetfunction.Input) *|* *None*) – A dictionary with the input information or an
+  Input object.
+* **Returns:**
+  A Input object built from the input.
+  : It can be a LocalFileInput, S3FileInput, MySQLInput, or TableInput
+    object, or None if nothing was provided
+* **Return type:**
+  [Input](#tabsdatasdk.datasetfunction.Input)
+* **Raises:**
+  [**InputConfigurationError**](#tabsdatasdk.exceptions.InputConfigurationError) – 
+
+### tabsdatasdk.datasetfunction.build_input_from_dict(input: dict) → [Input](#tabsdatasdk.datasetfunction.Input)
+
+### tabsdatasdk.datasetfunction.build_output(output: dict | [Output](#tabsdatasdk.datasetfunction.Output) | None) → [Output](#tabsdatasdk.datasetfunction.Output) | None
+
+Builds an Output object.
+
+* **Parameters:**
+  **output** (*dict* *|* [*Output*](#tabsdatasdk.datasetfunction.Output) *|* *None*) – A dictionary with the output information,
+  or an Output object.
+* **Returns:**
+  A Output object built from the output.
+  : That can be a MySQLOutput or Table Output object, or None if nothing was
+    provided.
+* **Return type:**
+  [Output](#tabsdatasdk.datasetfunction.Output)
+* **Raises:**
+  [**OutputConfigurationError**](#tabsdatasdk.exceptions.OutputConfigurationError) – 
+
+## tabsdatasdk.decorators module
+
+### tabsdatasdk.decorators.dataset(name: str, input: dict | [Input](#tabsdatasdk.datasetfunction.Input) | [InputPlugin](#tabsdatasdk.plugin.InputPlugin) | None = None, output: dict | [Output](#tabsdatasdk.datasetfunction.Output) | [OutputPlugin](#tabsdatasdk.plugin.OutputPlugin) | None = None, trigger_by: str | [URI](#tabsdatasdk.uri.URI) | None = None) → callable
+
+Decorator to set the input, output  and trigger_by parameters of a function and
+: convert it to a DatasetFunction.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the dataset.
+  * **input** (*dict* *|* [*Input*](#tabsdatasdk.datasetfunction.Input) *|* [*InputPlugin*](#tabsdatasdk.plugin.InputPlugin) *|* *None*) – Where to obtain the input of the
+    function. It can be a dictionary, an Input, an InputPlugin or None.
+  * **output** (*dict* *|* [*Output*](#tabsdatasdk.datasetfunction.Output) *|* [*OutputPlugin*](#tabsdatasdk.plugin.OutputPlugin) *|* *None*) – Where to store the output of
+    the function. It can be a dictionary, an Output, an OutputPlugin or None.
+  * **trigger_by** (*str* *|* [*URI*](#tabsdatasdk.uri.URI) *|* *None*) – The trigger to execute the function. It can be a
+    dataset in the system or None (in which case it must be triggered manually).
+* **Returns:**
+  The function converted to a DatasetFunction.
+* **Return type:**
+  callable
+
+## tabsdatasdk.exceptions module
+
+### *exception* tabsdatasdk.exceptions.CredentialsConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the creation or modification of a Credentials object fails.
+
+#### CODE_PREFIX *= 'CCE'*
+
+### *class* tabsdatasdk.exceptions.ErrorCode(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+#### CCE1 *= {'code': 'CCE-001', 'message': 'The dictionary to build a Credentials object must contain exactly one key, which must be one of the following: {}. Instead, got the following key(s) in the dictionary: {}.'}*
+
+#### CCE2 *= {'code': 'CCE-002', 'message': "The '{}' key in the dictionary to build a Credentials must have an object of type 'dict' as its value. Instead, got an object of type '{}'."}*
+
+#### CCE3 *= {'code': 'CCE-003', 'message': "The 'credentials' parameter must be one of {}, got '{}' instead."}*
+
+#### FCE1 *= {'code': 'FCE-001', 'message': "The 'original_function' parameter of a TabsDataFunction must be a callable object, got an object of type '{}' instead."}*
+
+#### FCE2 *= {'code': 'FCE-002', 'message': "The 'trigger_by' parameter of a TabsDataFunction must be a str or a URI object, got an object of type '{}' instead."}*
+
+#### FCE3 *= {'code': 'FCE-003', 'message': "The 'trigger_by' parameter of a TabsDataFunction must point to a dataset in the system. Instead got '{}', which does not contain a dataset."}*
+
+#### FCE4 *= {'code': 'FCE-004', 'message': "The 'trigger_by' parameter of a TabsDataFunction must point to a dataset in the system. Instead got '{}', which points to a table."}*
+
+#### FCE5 *= {'code': 'FCE-005', 'message': 'A DatasetFunction must have either a TableInput as the input or a TableOutput as the output. Instead got {} as the input and {} as the output.'}*
+
+#### FCE6 *= {'code': 'FCE-006', 'message': "The 'dataset_name' parameter in DatasetFunction be of type 'str'; got '{}' instead."}*
+
+#### FOCE1 *= {'code': 'FOCE-001', 'message': 'The dictionary to build a FileFormat object must contain exactly one key, which must be one of the following: {}. Instead, got the following key(s) in the dictionary: {}.'}*
+
+#### FOCE2 *= {'code': 'FOCE-002', 'message': "The '{}' key in the dictionary to build a FileFormat must have an object of type 'dict' as its value. Instead, got an object of type '{}'."}*
+
+#### FOCE3 *= {'code': 'FOCE-003', 'message': "The '{}' parameter for a {} must be one of the following types: '{}'. Instead, got an object of type '{}'."}*
+
+#### FOCE4 *= {'code': 'FOCE-004', 'message': "The format string received was '{}', which is not one of the supported formats. The supported formats are: '{}'. If the format was not provided, it was inferred from the file extension. Please provide an explicit format that is supported, or use a FileFormat object."}*
+
+#### FOCE5 *= {'code': 'FOCE-005', 'message': "The 'format' parameter must be one of {}, got '{}' instead."}*
+
+#### FOCE6 *= {'code': 'FOCE-006', 'message': "The 'format' parameter must be one of {}, got 'None' instead. The most likely reason is that the format was not provided, and it could not be inferred from the file extension. Please provide it explicitly."}*
+
+#### ICE1 *= {'code': 'ICE-001', 'message': "Scheme '{}' not currently supported. The supported schemes are {}. Try using class {} instead."}*
+
+#### ICE10 *= {'code': 'ICE-010', 'message': "The '{}' dictionary to build a Input must contain the key '{}', but it is not present."}*
+
+#### ICE11 *= {'code': 'ICE-011', 'message': "The 'input' parameter to build a Output must be a 'dict', a Input object or 'None', got '{}' instead."}*
+
+#### ICE12 *= {'code': 'ICE-012', 'message': "The 'initial_values' parameter in a MySQLInput must be a 'dict' or 'None', got '{}' instead"}*
+
+#### ICE13 *= {'code': 'ICE-013', 'message': "The 'path' parameter in a LocalFileInput must be a 'str' or a 'list[str]', got '{}' instead"}*
+
+#### ICE14 *= {'code': 'ICE-014', 'message': "Scheme '{}' not supported. The supported scheme is '{}'. The scheme is inferred from the path, which should be of the form 'scheme://path' or '/path'. The provided path was '{}'."}*
+
+#### ICE15 *= {'code': 'ICE-015', 'message': "The 'format' parameter for the LocalFileInput was not provided, and we were unable to infer it from the extension of the files in the path parameter. The supported formats are '{}' and the obtained path was '{}'."}*
+
+#### ICE16 *= {'code': 'ICE-016', 'message': "The 'uri' parameter in a S3Input must be a 'str' or a 'list[str]', got '{}' instead"}*
+
+#### ICE17 *= {'code': 'ICE-017', 'message': "Scheme '{}' not supported. The supported scheme is '{}'. The scheme is inferred from the URI, which should be of the form 'scheme://path'. The URI provided was '{}'."}*
+
+#### ICE18 *= {'code': 'ICE-018', 'message': "The 'format' parameter for the S3Input was not provided, and we were unable to infer it from the extension of the files in the URI parameter. The supported formats are '{}' and the obtained URI was '{}'."}*
+
+#### ICE19 *= {'code': 'ICE-019', 'message': "The 'query' parameter in a MySQLInput must be a 'str' or a 'list[str]', got '{}' instead"}*
+
+#### ICE2 *= {'code': 'ICE-002', 'message': "Scheme '{}' not supported. The supported schemes are {}. The scheme is inferred from the URI, which should be of the form 'scheme://path'. The URI provided was '{}'."}*
+
+#### ICE20 *= {'code': 'ICE-020', 'message': "The 'credentials' parameter in a S3Input must be a 'dict' or a 'S3Credentials' object, got '{}' instead"}*
+
+#### ICE21 *= {'code': 'ICE-021', 'message': "The 'configs' parameter in a MySQLInput must be a 'dict' or None, got '{}' instead"}*
+
+#### ICE22 *= {'code': 'ICE-022', 'message': "The 'credentials' parameter in a MySQLInput must be a 'dict', a 'UserPasswordCredentials' object or None, got '{}' instead"}*
+
+#### ICE25 *= {'code': 'ICE-025', 'message': "URIs for a TableInput must be a valid uri and represent a table in the system, got '{}' instead."}*
+
+#### ICE3 *= {'code': 'ICE-003', 'message': "The 'format' parameter in a FileInput must be a 'str' or a 'dict', got '{}' instead"}*
+
+#### ICE4 *= {'code': 'ICE-004', 'message': "File format '{}' not supported. The supported formats are {}. If the format was not provided, it was inferred from the file(s) extension."}*
+
+#### ICE5 *= {'code': 'ICE-005', 'message': "The 'initial_last_modified' parameter in a FileInput must be a string in ISO 8601 format or a datetime object. Got the string '{}', but it was not in ISO 8601 format. Ensure that it can be parsed by using datetime.datetime.fromisoformat()."}*
+
+#### ICE6 *= {'code': 'ICE-006', 'message': "The 'initial_last_modified' parameter in a FileInput must be a string in ISO 8601 format or a datetime object. Instead, got an object of type '{}'."}*
+
+#### ICE7 *= {'code': 'ICE-007', 'message': "The 'input' dictionary to build a Input must contain exactly one key, which must be one of the following: {}. Instead, got the following key(s) in the dictionary: {}."}*
+
+#### ICE8 *= {'code': 'ICE-008', 'message': "The '{}' key in the dictionary to build a Input must have an object of type 'dict' as its value. Instead, got an object of type '{}'."}*
+
+#### ICE9 *= {'code': 'ICE-009', 'message': "The '{}' dictionary to build a Input must contain the key '{}', but it is not present."}*
+
+#### OCE1 *= {'code': 'OCE-001', 'message': "Scheme '{}' not currently supported. The supported schemes are {}. Try using class {} instead."}*
+
+#### OCE10 *= {'code': 'OCE-010', 'message': "The 'table' parameter in a TableOutput must be a 'str' or a list of 'str'; got '{}' of type '{}' instead."}*
+
+#### OCE2 *= {'code': 'OCE-002', 'message': "Scheme '{}' not currently supported. The supported schemes are {}. The scheme is inferred from the URI, which should be of the form 'scheme://path'. The URI provided was '{}'."}*
+
+#### OCE3 *= {'code': 'OCE-003', 'message': "The 'output' dictionary to build a Output must contain exactly one key, which must be one of the following: {}. Instead, got the following key(s) in the dictionary: {}."}*
+
+#### OCE4 *= {'code': 'OCE-004', 'message': "The '{}' key in the dictionary to build a Output must have an object of type 'dict' as its value. Instead, got an object of type '{}'."}*
+
+#### OCE5 *= {'code': 'OCE-005', 'message': "The '{}' dictionary to build a Output must contain the key '{}', but it is not present."}*
+
+#### OCE6 *= {'code': 'OCE-006', 'message': "The '{}' dictionary to build a Output must contain the key '{}', but it is not present."}*
+
+#### OCE7 *= {'code': 'OCE-007', 'message': "The 'output' parameter to build a Output must be a 'dict', a Output object or 'None', got '{}' instead."}*
+
+#### OCE8 *= {'code': 'OCE-08', 'message': "The 'destination_table' parameter in a MySQLOutput must be a 'list' or a 'str', got '{}' instead."}*
+
+#### OCE9 *= {'code': 'OCE-009', 'message': "The 'credentials' parameter in a MySQLOutput must be a 'dict', a 'UserPasswordCredentials' object or None; got '{}' instead."}*
+
+#### RE1 *= {'code': 'RE-001', 'message': "The 'function' parameter of the register function  must be an instance of TabsDataFunction. Either use the @tabset decorator around your function or create a TabsDataFunction object with your function as a parameter."}*
+
+#### RE10 *= {'code': 'RE-010', 'message': "The 'requirements' file provided to the register function must contain the key '{}' with a list of packages to install. The provided file '{}' contains this key, but it has a content of type '{}'."}*
+
+#### RE2 *= {'code': 'RE-002', 'message': "The 'code_location' and 'save_target' parameters of the register function cannot cannot be used simultaneously. Either provide 'code_location' and a path to the code you want to be stored, or 'save_target' with value 'file' (to save only the file where the function is declared) or 'folder' (to save the entire folder where the original file of the function is)."}*
+
+#### RE3 *= {'code': 'RE-003', 'message': "The 'save_target' parameter of the register function has value {}, which is not one of the allowed values: {}."}*
+
+#### RE4 *= {'code': 'RE-004', 'message': "The 'save_location' parameter of the register function has value {}, which is not a valid folder path. Please ensure the path to the folder exists."}*
+
+#### RE5 *= {'code': 'RE-005', 'message': "The 'path_to_code' parameter of the register function has value {}, which is not a valid system path. Please ensure it is a valid path to either a folder or a file."}*
+
+#### RE6 *= {'code': 'RE-006', 'message': "The 'local_packages' parameter provided to the register function must be a string or a list of strings representing valid paths to folders in your local system. The provided path '{}' does not exist or is not a folder."}*
+
+#### RE7 *= {'code': 'RE-007', 'message': "The 'requirements' parameter provided to the register function must be a string representing a valid path to a yaml file in your local system. The provided path '{}' does not exist or is not a file."}*
+
+#### RE8 *= {'code': 'RE-008', 'message': "The 'requirements' file provided to the register function must contain the key '{}', which indicates the Python version to use. The provided file '{}' does not contain this key. The data it contains is: '{}'"}*
+
+#### RE9 *= {'code': 'RE-009', 'message': "The 'requirements' file provided to the register function must contain the key '{}', which indicates the Python packages to install. The provided file '{}' does not contain this key. The data it contains is: '{}'"}*
+
+#### SCE1 *= {'code': 'SCE-001', 'message': 'The dictionary to build a Secret object must contain exactly one key, which must be one of the following: {}. Instead, got the following key(s) in the dictionary: {}.'}*
+
+#### SCE2 *= {'code': 'SCE-002', 'message': "The '{}' key in the dictionary to build a Secret must have an object of type 'dict' as its value. Instead, got an object of type '{}'."}*
+
+#### SCE3 *= {'code': 'SCE-003', 'message': "The parameter to build a Secret object must be one of {}, got '{}' instead."}*
+
+#### SDKE1 *= {'code': 'SDKE-001', 'message': "The SDK tried to raise an exception of type '{}', but the error code provided was '{}', which does not start with the expected prefix '{}'. The message provided by the original exception was: '{}'."}*
+
+#### TDF1 *= {'code': 'TDF-001', 'message': "The input DataFrame is missing the required column(s) '{}'."}*
+
+#### TDF2 *= {'code': 'TDF-002', 'message': "TabsDataLazyFrame must be instantiated with a polars LazyFrame, a polars DataFrame, or a TabsDataLazyFrame object. '{}' was provided instead."}*
+
+#### TSE1 *= {'code': 'TSE-001', 'message': 'If you want to update the directory_to_bundle, requirements or local_packages, you must provide the function_path.'}*
+
+#### UCE1 *= {'code': 'UCE-001', 'message': "The 'version' parameter of a Version object must be a 'str', got '{}' instead."}*
+
+#### UCE10 *= {'code': 'UCE-010', 'message': "The 'datastore' parameter to build a URI object must be of type 'str' or 'None', got '{}' instead."}*
+
+#### UCE11 *= {'code': 'UCE-011', 'message': "The 'dataset' parameter to build a URI object must be of type 'str' or 'None', got '{}' instead."}*
+
+#### UCE12 *= {'code': 'UCE-012', 'message': "The 'table' parameter to build a URI object must be of type 'str' or 'None', got '{}' instead."}*
+
+#### UCE13 *= {'code': 'UCE-013', 'message': "The 'uri' parameter to build a URI must be of the form td:///datastore</dataset></table><@versions> or td://dataset</table><@versions>, where everything inside <> is optional, got '{}' instead."}*
+
+#### UCE14 *= {'code': 'UCE-014', 'message': "The 'uri' parameter to build a URI object must be of type 'str' or URI, got '{}' instead."}*
+
+#### UCE15 *= {'code': 'UCE-015', 'message': "A URI object must have either a valid 'datastore' or 'dataset' parameter, got neither."}*
+
+#### UCE16 *= {'code': 'UCE-016', 'message': "A URI object cannot have a 'table' parameter without a 'dataset' parameter."}*
+
+#### UCE2 *= {'code': 'UCE-002', 'message': "The 'initial_version' parameter of a VersionRange object must resolve to a '{}' object, got '{}' instead that is of type '{}'."}*
+
+#### UCE3 *= {'code': 'UCE-003', 'message': "The 'final_version' parameter of a VersionRange object must resolve to a '{}' object, got '{}' instead that is of type '{}'."}*
+
+#### UCE4 *= {'code': 'UCE-004', 'message': "The 'version' parameter to build any Version object must be one of '{}', got type '{}' instead."}*
+
+#### UCE5 *= {'code': 'UCE-005', 'message': "A string to create a VersionRange object must contain exactly two valid versions, separated by a '..', got {} instead."}*
+
+#### UCE6 *= {'code': 'UCE-006', 'message': "The 'version_list' parameter to build a VersionList object must be of type'{}', got '{}' instead."}*
+
+#### UCE7 *= {'code': 'UCE-007', 'message': "The 'version_list' parameter must be a list of objects that resolve to type '{}', got '{}' that is of type '{}' instead."}*
+
+#### UCE8 *= {'code': 'UCE-008', 'message': "The 'version_list' parameter must be a list of 2 or more elements, got '{}' that has length '{}' instead."}*
+
+#### UCE9 *= {'code': 'UCE-009', 'message': "A valid version string must be of the form 'HEAD', 'HEAD^', 'HEAD~1' or a Hash, i.e., match the regex '{}'. Got '{}' instead."}*
+
+### *exception* tabsdatasdk.exceptions.FormatConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the creation or modification of a Format object fails.
+
+#### CODE_PREFIX *= 'FOCE'*
+
+### *exception* tabsdatasdk.exceptions.FunctionConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when a function is not properly configured to be registered.
+
+#### CODE_PREFIX *= 'FCE'*
+
+### *exception* tabsdatasdk.exceptions.InputConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the creation or modification of an Input object fails.
+
+#### CODE_PREFIX *= 'ICE'*
+
+### *exception* tabsdatasdk.exceptions.OutputConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the creation or modification of an Input object fails.
+
+#### CODE_PREFIX *= 'OCE'*
+
+### *exception* tabsdatasdk.exceptions.RegistrationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when registration of a function in the server fails.
+
+#### CODE_PREFIX *= 'RE'*
+
+### *exception* tabsdatasdk.exceptions.SDKError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+#### CODE_PREFIX *= 'SDKE'*
+
+Exception raised when an internal error occurs. This is likely a bug in the SDK.
+
+### *exception* tabsdatasdk.exceptions.SecretConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the creation or modification of a Secret object fails.
+
+#### CODE_PREFIX *= 'SCE'*
+
+### *exception* tabsdatasdk.exceptions.TabsDataException(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: `Exception`
+
+Base exception for all exceptions in the Tabs Data SDK.
+
+### *exception* tabsdatasdk.exceptions.TabsDataFrameError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when handling a TabsDataFrame.
+
+#### CODE_PREFIX *= 'TDF'*
+
+### *exception* tabsdatasdk.exceptions.TabsdataServerError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the server returns an error.
+
+#### CODE_PREFIX *= 'TSE'*
+
+### *exception* tabsdatasdk.exceptions.URIConfigurationError(error_code: [ErrorCode](#tabsdatasdk.exceptions.ErrorCode), \*args)
+
+Bases: [`TabsDataException`](#tabsdatasdk.exceptions.TabsDataException)
+
+Exception raised when the creation or modification of a URI object or one of
+its auxiliary objects fails.
+
+#### CODE_PREFIX *= 'UCE'*
+
+## tabsdatasdk.format module
+
+### *class* tabsdatasdk.format.CSVFormat(separator: str | int = ',', quote_char: str | int = '"', eol_char: str | int = '\\n', encoding: str = 'Utf8', null_values: list | None = None, missing_is_null: bool = True, truncate_ragged_lines: bool = False, comment_prefix: str | int | None = None, try_parse_dates: bool = False, decimal_comma: bool = False, has_header: bool = True, skip_rows: int = 0, skip_rows_after_header: int = 0, raise_if_empty: bool = True, ignore_errors: bool = False)
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the CSV file format.
+
+#### separator
+
+The separator of the CSV file.
+
+* **Type:**
+  str | int
+
+#### quote_char
+
+The quote character of the CSV file.
+
+* **Type:**
+  str | int
+
+#### eol_char
+
+The end of line character of the CSV file.
+
+* **Type:**
+  str | int
+
+#### encoding
+
+The encoding of the CSV file.
+
+* **Type:**
+  str
+
+#### null_values
+
+The null values of the CSV file.
+
+* **Type:**
+  list | None
+
+#### missing_is_null
+
+Whether missing values should be marked as null.
+
+* **Type:**
+  bool
+
+#### truncate_ragged_lines
+
+Whether to truncate ragged lines of the CSV file.
+
+* **Type:**
+  bool
+
+#### comment_prefix
+
+The comment prefix of the CSV file.
+
+* **Type:**
+  str | int | None
+
+#### try_parse_dates
+
+Whether to try parse dates of the CSV file.
+
+* **Type:**
+  bool
+
+#### decimal_comma
+
+Whether the CSV file uses decimal comma.
+
+* **Type:**
+  bool
+
+#### has_header
+
+If the CSV file has header.
+
+* **Type:**
+  bool
+
+#### skip_rows
+
+How many rows should be skipped in the CSV file.
+
+* **Type:**
+  int
+
+#### skip_rows_after_header
+
+How many rows should be skipped after the
+header in the CSV file.
+
+* **Type:**
+  int
+
+#### raise_if_empty
+
+If an error should be raised for an empty CSV.
+
+* **Type:**
+  bool
+
+#### ignore_errors
+
+If the errors loading the CSV must be ignored.
+
+* **Type:**
+  bool
+
+#### DEFAULT_COMMENT_PREFIX *= None*
+
+#### DEFAULT_DECIMAL_COMMA *= False*
+
+#### DEFAULT_ENCODING *= 'Utf8'*
+
+#### DEFAULT_EOL_CHAR *= '\\n'*
+
+#### DEFAULT_HAS_HEADER *= True*
+
+#### DEFAULT_IGNORE_ERRORS *= False*
+
+#### DEFAULT_MISSING_IS_NULL *= True*
+
+#### DEFAULT_NULL_VALUES *= None*
+
+#### DEFAULT_QUOTE_CHAR *= '"'*
+
+#### DEFAULT_RAISE_IF_EMPTY *= True*
+
+#### DEFAULT_SEPARATOR *= ','*
+
+#### DEFAULT_SKIP_ROWS *= 0*
+
+#### DEFAULT_SKIP_ROWS_AFTER_HEADER *= 0*
+
+#### DEFAULT_TRUNCATE_RAGGED_LINES *= False*
+
+#### DEFAULT_TRY_PARSE_DATES *= False*
+
+#### IDENTIFIER *= 'csv-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.format.FileFormat
+
+Bases: `ABC`
+
+The class of the different possible formats for files.
+
+#### IDENTIFIER *= None*
+
+#### *abstract* to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.format.FileFormatIdentifier(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the identifiers of the different types of data outputs.
+
+#### CSV *= 'csv-format'*
+
+#### LOG *= 'log-format'*
+
+#### NDJSON *= 'ndjson-format'*
+
+#### PARQUET *= 'parquet-format'*
+
+### *class* tabsdatasdk.format.LogFormat
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the log file format.
+
+#### IDENTIFIER *= 'log-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.format.NDJSONFormat
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the log file format.
+
+#### IDENTIFIER *= 'ndjson-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.format.ParquetFormat
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the Parquet file format.
+
+#### IDENTIFIER *= 'parquet-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### tabsdatasdk.format.build_file_format(configuration: dict | str | [FileFormat](#tabsdatasdk.format.FileFormat)) → [FileFormat](#tabsdatasdk.format.FileFormat)
+
+Builds a file format object from a dictionary, a string or a Format Object.
+:return: A file format object.
+
+### tabsdatasdk.format.build_file_format_from_dict(configuration: dict) → [FileFormat](#tabsdatasdk.format.FileFormat)
+
+### tabsdatasdk.format.get_implicit_format_from_list(path_list: list) → str
+
+## tabsdatasdk.globals module
+
+## tabsdatasdk.plugin module
+
+### *class* tabsdatasdk.plugin.InputPlugin
+
+Bases: `ABC`
+
+Abstract class for input plugins.
+
+### trigger_input(working_dir
+
+str) -> Union[str, Tuple[str, …], List[str]]
+Trigger the import of the data. The method will receive a folder where it
+must store the data as parquet files, and return a list of the paths of
+the files created. This files will then be loaded and mapped to the
+dataset function in positional order, so if you want file.parquet to be
+the first argument of the dataset function, you must return it first. If
+you want a parameter to receive multiple files, return a list of the paths.
+For example, you would give the following return to provide a first argument
+with a single file and a second argument with two files:
+return [“file1.parquet”, [“file2.parquet”, “file3.parquet”]]
+
+#### IDENTIFIER *= 'input-plugin'*
+
+#### to_dict() → dict
+
+Return a dictionary representation of the object. This is used to save the
+: object in a file.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+#### *abstract* trigger_input(working_dir: str) → str | Tuple[str, ...] | List[str]
+
+Trigger the import of the data. This must be implemented in any class that
+: inherits from this class. The method will receive a folder where it must
+  store the data as parquet files, and return a list of the paths of the
+  files created. This files will then be loaded and mapped to the dataset
+  function in positional order, so if you want file.parquet to be the first
+  argument of the dataset function, you must return it first. If you want a
+  parameter to receive multiple files, return a list of the paths.
+  For example, you would give the following return to provide a first
+  argument with a single file and a second argument with two files:
+  return [“file1.parquet”, [“file2.parquet”, “file3.parquet”]]
+
+* **Parameters:**
+  **working_dir** (*str*) – The folder where the files must be stored
+* **Returns:**
+  The path of the file(s) created, in
+  : the order they must be mapped to the dataset function
+* **Return type:**
+  Union[str, Tuple[str, …], List[str]]
+
+### *class* tabsdatasdk.plugin.OutputPlugin
+
+Bases: `ABC`
+
+Abstract class for output plugins.
+
+#### trigger_output(\*args, \*\*kwargs)
+
+Trigger the exporting of the data. This function will receive the resulting
+data from the dataset function and must store it in the desired location.
+
+#### IDENTIFIER *= 'output-plugin'*
+
+#### to_dict() → dict
+
+Return a dictionary representation of the object. This is used to save the
+: object in a file.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+#### *abstract* trigger_output(\*args, \*\*kwargs)
+
+Trigger the exporting of the data. This function will receive the resulting data
+: from the dataset function and must store it in the desired location.
+
+* **Parameters:**
+  * **\*args** – The data to be exported
+  * **\*\*kwargs** – Additional parameters to be used in the export
+* **Returns:**
+  None
+
+## tabsdatasdk.secret module
+
+### *class* tabsdatasdk.secret.DirectSecret(secret_direct_value: str)
+
+Bases: [`Secret`](#tabsdatasdk.secret.Secret)
+
+Secrets class representing a secret stored in plain text.
+
+#### secret_direct_value
+
+The secret value.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Convert the DirectSecret object to a dictionary.
+
+#### secret_value() → str
+
+Get the secret value.
+
+#### IDENTIFIER *= 'direct-secret'*
+
+#### SECRET_DIRECT_VALUE_KEY *= 'secret_direct_value'*
+
+#### *property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during execution
+in the backend.
+
+* **Returns:**
+  The secret value.
+* **Return type:**
+  str
+
+#### to_dict() → dict
+
+Convert the DirectSecret object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the DirectSecret object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.secret.EnvironmentSecret(environment_variable_name: str)
+
+Bases: [`Secret`](#tabsdatasdk.secret.Secret)
+
+Secrets class representing a secret obtained from an environment variable in
+: the server.
+
+#### environment_variable_name
+
+Name of the environment variable from which
+we will obtain the secret value.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Convert the EnvironmentSecret object to a dictionary.
+
+#### secret_value() → str
+
+Get the secret value.
+
+#### ENVIRONMENT_VARIABLE_NAME_KEY *= 'environment_variable_name'*
+
+#### IDENTIFIER *= 'environment-secret'*
+
+#### *property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during execution
+in the backend.
+
+* **Returns:**
+  The secret value.
+* **Return type:**
+  str
+
+#### to_dict() → dict
+
+Convert the EnvironmentSecret object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the EnvironmentSecret object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.secret.HashiCorpSecret(secret_name: str)
+
+Bases: [`Secret`](#tabsdatasdk.secret.Secret)
+
+Secrets class representing a secret stored in Hashicorp Vault.
+
+#### secret_name
+
+The name of the secret in Hashicorp Vault.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Convert the HashiCorpSecret object to a dictionary.
+
+#### secret_value() → str
+
+Get the secret value.
+
+#### IDENTIFIER *= 'hashicorp-secret'*
+
+#### SECRET_NAME_KEY *= 'secret_name'*
+
+#### *property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during execution
+in the backend.
+
+* **Returns:**
+  The secret value.
+* **Return type:**
+  str
+
+#### to_dict() → dict
+
+Convert the HashiCorpSecret object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the HashiCorpSecret object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.secret.Secret
+
+Bases: `ABC`
+
+Secrets class to store the credentials needed to access different
+services.
+
+#### *abstract property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during
+execution in the backend.
+
+#### *abstract* to_dict() → dict
+
+Convert the secret object to a dictionary.
+
+### *class* tabsdatasdk.secret.SecretIdentifier(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+#### DIRECT_SECRET *= 'direct-secret'*
+
+#### ENVIRONMENT_SECRET *= 'environment-secret'*
+
+#### HASHICORP_SECRET *= 'hashicorp-secret'*
+
+### tabsdatasdk.secret.build_secret(configuration: str | dict | [Secret](#tabsdatasdk.secret.Secret)) → [Secret](#tabsdatasdk.secret.Secret) | [DirectSecret](#tabsdatasdk.secret.DirectSecret) | [EnvironmentSecret](#tabsdatasdk.secret.EnvironmentSecret)
+
+Builds a secret object from a dictionary, a string or a Secret Object.
+
+* **Returns:**
+  The secret object.
+* **Return type:**
+  [Secret](#tabsdatasdk.secret.Secret) | [DirectSecret](#tabsdatasdk.secret.DirectSecret) | [EnvironmentSecret](#tabsdatasdk.secret.EnvironmentSecret)
+
+## tabsdatasdk.uri module
+
+### *class* tabsdatasdk.uri.URI(datastore: str | None = None, dataset: str | None = None, table: str | None = None, version: str | [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None = None)
+
+Bases: `object`
+
+URI class to represent a Tabs Data URI. The URI is composed of a datastore, a
+: dataset, a table and a version. The URI is represented as
+  td://datastore/dataset/table@version or td://dataset/table@version. The
+  datastore, dataset and table are optional, but at least one of them must be
+  present. The version is optional. The datastore, dataset and table must be
+  strings. The version can be a string, a Version object, a VersionList object
+  or a VersionRange object.
+
+#### datastore
+
+The datastore of the URI.
+
+* **Type:**
+  str
+
+#### dataset
+
+The dataset of the URI.
+
+* **Type:**
+  str
+
+#### table
+
+The table of the URI.
+
+* **Type:**
+  str
+
+#### version
+
+The version of the URI.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None
+
+#### to_string() → str
+
+Return the URI as a string.
+
+#### *property* dataset *: str*
+
+The dataset of the URI.
+
+* **Type:**
+  str
+
+#### *property* datastore *: str*
+
+The datastore of the URI.
+
+* **Type:**
+  str
+
+#### *property* table *: str*
+
+The table of the URI.
+
+* **Type:**
+  str
+
+#### to_string() → str
+
+Return the URI as a string.
+
+* **Returns:**
+  The URI as a string.
+* **Return type:**
+  str
+
+#### *property* version *: [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None*
+
+The version(s) of the URI.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None
+
+### *class* tabsdatasdk.uri.Version(version: str)
+
+Bases: `object`
+
+Version class to represent a Tabs Data version. The version is represented as a
+: string. The version can be HEAD, HEAD^, HEAD^^, HEAD~1, HEAD~2, etc. or a
+  26-character hexadecimal string (the hash of a specific commit).
+
+#### version
+
+The version of the URI.
+
+* **Type:**
+  str
+
+#### to_string() → str
+
+Return the version as a string.
+
+#### VERSION_PATTERN *= re.compile('^(HEAD\\\\^\*|HEAD~[0-9]+|[A-Z0-9]{26})$')*
+
+#### to_string() → str
+
+Return the version as a string.
+
+#### *property* version *: str*
+
+The version of the URI.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.uri.VersionList(version_list: List[[Version](#tabsdatasdk.uri.Version)] | List[str])
+
+Bases: `object`
+
+VersionList class to represent a list of Tabs Data versions. The version list is
+: represented as a list of Version objects.
+
+#### version_list
+
+The list of versions of the URI.
+
+* **Type:**
+  List[[Version](#tabsdatasdk.uri.Version)]
+
+#### to_string() → str
+
+Return the version list as a string.
+
+#### to_string() → str
+
+Return the version list as a string.
+
+* **Returns:**
+  The version list as a string.
+* **Return type:**
+  str
+
+#### *property* version_list *: List[[Version](#tabsdatasdk.uri.Version)]*
+
+The list of versions of the URI.
+
+* **Type:**
+  List[[Version](#tabsdatasdk.uri.Version)]
+
+### *class* tabsdatasdk.uri.VersionRange(initial_version: str | [Version](#tabsdatasdk.uri.Version), final_version: str | [Version](#tabsdatasdk.uri.Version))
+
+Bases: `object`
+
+VersionRange class to represent a range of Tabs Data versions. The version range is
+: represented as two Version objects, indicating the beginning and ending of
+  the range.
+
+#### initial_version
+
+The initial version of the range.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version)
+
+#### final_version
+
+The final version of the range.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version)
+
+#### to_string() → str
+
+Return the version range as a string.
+
+#### *property* final_version *: [Version](#tabsdatasdk.uri.Version)*
+
+The final version of the range.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version)
+
+#### *property* initial_version *: [Version](#tabsdatasdk.uri.Version)*
+
+The initial version of the range.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version)
+
+#### to_string() → str
+
+Return the version range as a string.
+
+* **Returns:**
+  The version range as a string.
+* **Return type:**
+  str
+
+### tabsdatasdk.uri.build_uri_object(uri: str | [URI](#tabsdatasdk.uri.URI)) → [URI](#tabsdatasdk.uri.URI)
+
+### tabsdatasdk.uri.build_version_object(version: str | [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange))
+
+## Module contents
+
+### *class* tabsdatasdk.CSVFormat(separator: str | int = ',', quote_char: str | int = '"', eol_char: str | int = '\\n', encoding: str = 'Utf8', null_values: list | None = None, missing_is_null: bool = True, truncate_ragged_lines: bool = False, comment_prefix: str | int | None = None, try_parse_dates: bool = False, decimal_comma: bool = False, has_header: bool = True, skip_rows: int = 0, skip_rows_after_header: int = 0, raise_if_empty: bool = True, ignore_errors: bool = False)
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the CSV file format.
+
+#### separator
+
+The separator of the CSV file.
+
+* **Type:**
+  str | int
+
+#### quote_char
+
+The quote character of the CSV file.
+
+* **Type:**
+  str | int
+
+#### eol_char
+
+The end of line character of the CSV file.
+
+* **Type:**
+  str | int
+
+#### encoding
+
+The encoding of the CSV file.
+
+* **Type:**
+  str
+
+#### null_values
+
+The null values of the CSV file.
+
+* **Type:**
+  list | None
+
+#### missing_is_null
+
+Whether missing values should be marked as null.
+
+* **Type:**
+  bool
+
+#### truncate_ragged_lines
+
+Whether to truncate ragged lines of the CSV file.
+
+* **Type:**
+  bool
+
+#### comment_prefix
+
+The comment prefix of the CSV file.
+
+* **Type:**
+  str | int | None
+
+#### try_parse_dates
+
+Whether to try parse dates of the CSV file.
+
+* **Type:**
+  bool
+
+#### decimal_comma
+
+Whether the CSV file uses decimal comma.
+
+* **Type:**
+  bool
+
+#### has_header
+
+If the CSV file has header.
+
+* **Type:**
+  bool
+
+#### skip_rows
+
+How many rows should be skipped in the CSV file.
+
+* **Type:**
+  int
+
+#### skip_rows_after_header
+
+How many rows should be skipped after the
+header in the CSV file.
+
+* **Type:**
+  int
+
+#### raise_if_empty
+
+If an error should be raised for an empty CSV.
+
+* **Type:**
+  bool
+
+#### ignore_errors
+
+If the errors loading the CSV must be ignored.
+
+* **Type:**
+  bool
+
+#### DEFAULT_COMMENT_PREFIX *= None*
+
+#### DEFAULT_DECIMAL_COMMA *= False*
+
+#### DEFAULT_ENCODING *= 'Utf8'*
+
+#### DEFAULT_EOL_CHAR *= '\\n'*
+
+#### DEFAULT_HAS_HEADER *= True*
+
+#### DEFAULT_IGNORE_ERRORS *= False*
+
+#### DEFAULT_MISSING_IS_NULL *= True*
+
+#### DEFAULT_NULL_VALUES *= None*
+
+#### DEFAULT_QUOTE_CHAR *= '"'*
+
+#### DEFAULT_RAISE_IF_EMPTY *= True*
+
+#### DEFAULT_SEPARATOR *= ','*
+
+#### DEFAULT_SKIP_ROWS *= 0*
+
+#### DEFAULT_SKIP_ROWS_AFTER_HEADER *= 0*
+
+#### DEFAULT_TRUNCATE_RAGGED_LINES *= False*
+
+#### DEFAULT_TRY_PARSE_DATES *= False*
+
+#### IDENTIFIER *= 'csv-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.Dataset(name: str, datastore: str, created_on: int, created_by: str, description: str, function: [Function](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Function) = None, \*\*kwargs)
+
+Bases: `object`
+
+This class represents a dataset in the TabsdataServer.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the dataset.
+  * **datastore** (*str*) – The datastore where the dataset is stored.
+  * **created_on** (*int*) – The timestamp when the dataset was created.
+  * **created_by** (*str*) – The user that created the dataset.
+  * **description** (*str*) – The description of the dataset.
+  * **function** ([*Function*](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Function)) – The function of the dataset.
+  * **\*\*kwargs** – Additional keyword arguments.
+
+#### created_on_string
+
+The timestamp when the dataset was created as a string.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.Datastore(name: str, description: str, created_on: int, created_by: str, \*\*kwargs)
+
+Bases: `object`
+
+This class represents a datastore in the TabsdataServer.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the datastore.
+  * **id** (*str*) – The id of the datastore.
+  * **description** (*str*) – The description of the datastore.
+  * **created_on** (*int*) – The timestamp when the datastore was created.
+  * **created_by** (*str*) – The user that created the datastore.
+  * **\*\*kwargs** – Additional keyword
+
+#### created_on_string
+
+The timestamp when the datastore was created as a
+string.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.DirectSecret(secret_direct_value: str)
+
+Bases: [`Secret`](#tabsdatasdk.secret.Secret)
+
+Secrets class representing a secret stored in plain text.
+
+#### secret_direct_value
+
+The secret value.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Convert the DirectSecret object to a dictionary.
+
+#### secret_value() → str
+
+Get the secret value.
+
+#### IDENTIFIER *= 'direct-secret'*
+
+#### SECRET_DIRECT_VALUE_KEY *= 'secret_direct_value'*
+
+#### *property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during execution
+in the backend.
+
+* **Returns:**
+  The secret value.
+* **Return type:**
+  str
+
+#### to_dict() → dict
+
+Convert the DirectSecret object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the DirectSecret object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.EnvironmentSecret(environment_variable_name: str)
+
+Bases: [`Secret`](#tabsdatasdk.secret.Secret)
+
+Secrets class representing a secret obtained from an environment variable in
+: the server.
+
+#### environment_variable_name
+
+Name of the environment variable from which
+we will obtain the secret value.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Convert the EnvironmentSecret object to a dictionary.
+
+#### secret_value() → str
+
+Get the secret value.
+
+#### ENVIRONMENT_VARIABLE_NAME_KEY *= 'environment_variable_name'*
+
+#### IDENTIFIER *= 'environment-secret'*
+
+#### *property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during execution
+in the backend.
+
+* **Returns:**
+  The secret value.
+* **Return type:**
+  str
+
+#### to_dict() → dict
+
+Convert the EnvironmentSecret object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the EnvironmentSecret object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.ExecutionPlan(datastore: str, dataset: str, triggered_by: str, triggered_on: int, ended_on: int, started_on: int, status: str, \*\*kwargs)
+
+Bases: `object`
+
+This class represents an execution plan in the TabsdataServer.
+
+* **Parameters:**
+  * **datastore** (*str*) – The datastore where the execution plan is running.
+  * **dataset** (*str*) – The dataset where the execution plan is running.
+  * **triggered_by** (*str*) – The user that triggered the execution plan.
+  * **triggered_on** (*int*) – The timestamp when the execution plan was triggered.
+  * **ended_on** (*int*) – The timestamp when the execution plan ended.
+  * **started_on** (*int*) – The timestamp when the execution plan started.
+  * **status** (*str*) – The status of the execution plan.
+  * **\*\*kwargs** – Additional keyword arguments.
+
+#### STATUS_MAPPING
+
+A dictionary mapping the status of the execution plan to
+a human-readable string.
+
+* **Type:**
+  dict
+
+#### triggered_on_str
+
+The timestamp when the execution plan was triggered as a
+string.
+
+* **Type:**
+  str
+
+#### ended_on_str
+
+The timestamp when the execution plan ended as a string.
+
+* **Type:**
+  str
+
+#### started_on_str
+
+The timestamp when the execution plan started as a string.
+
+* **Type:**
+  str
+
+### status_to_mapping(status
+
+str) -> str: Convert the status of the execution plan
+to a human-readable string.
+
+#### STATUS_MAPPING *= {'C': 'Cancelled', 'D': 'Done', 'E': 'Error', 'F': 'Failed', 'R': 'Running', 'S': 'Scheduled'}*
+
+#### status_to_mapping(status: str) → str
+
+Function to convert an execution_plan status to a mapping. While currently it
+only accesses the dictionary and returns the corresponding value, it could get
+more difficult in the future.
+
+### *class* tabsdatasdk.HashiCorpSecret(secret_name: str)
+
+Bases: [`Secret`](#tabsdatasdk.secret.Secret)
+
+Secrets class representing a secret stored in Hashicorp Vault.
+
+#### secret_name
+
+The name of the secret in Hashicorp Vault.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Convert the HashiCorpSecret object to a dictionary.
+
+#### secret_value() → str
+
+Get the secret value.
+
+#### IDENTIFIER *= 'hashicorp-secret'*
+
+#### SECRET_NAME_KEY *= 'secret_name'*
+
+#### *property* secret_value *: str*
+
+Get the secret value pointed at by the secret. To be used only during execution
+in the backend.
+
+* **Returns:**
+  The secret value.
+* **Return type:**
+  str
+
+#### to_dict() → dict
+
+Convert the HashiCorpSecret object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the HashiCorpSecret object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.InputPlugin
+
+Bases: `ABC`
+
+Abstract class for input plugins.
+
+### trigger_input(working_dir
+
+str) -> Union[str, Tuple[str, …], List[str]]
+Trigger the import of the data. The method will receive a folder where it
+must store the data as parquet files, and return a list of the paths of
+the files created. This files will then be loaded and mapped to the
+dataset function in positional order, so if you want file.parquet to be
+the first argument of the dataset function, you must return it first. If
+you want a parameter to receive multiple files, return a list of the paths.
+For example, you would give the following return to provide a first argument
+with a single file and a second argument with two files:
+return [“file1.parquet”, [“file2.parquet”, “file3.parquet”]]
+
+#### IDENTIFIER *= 'input-plugin'*
+
+#### to_dict() → dict
+
+Return a dictionary representation of the object. This is used to save the
+: object in a file.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+#### *abstract* trigger_input(working_dir: str) → str | Tuple[str, ...] | List[str]
+
+Trigger the import of the data. This must be implemented in any class that
+: inherits from this class. The method will receive a folder where it must
+  store the data as parquet files, and return a list of the paths of the
+  files created. This files will then be loaded and mapped to the dataset
+  function in positional order, so if you want file.parquet to be the first
+  argument of the dataset function, you must return it first. If you want a
+  parameter to receive multiple files, return a list of the paths.
+  For example, you would give the following return to provide a first
+  argument with a single file and a second argument with two files:
+  return [“file1.parquet”, [“file2.parquet”, “file3.parquet”]]
+
+* **Parameters:**
+  **working_dir** (*str*) – The folder where the files must be stored
+* **Returns:**
+  The path of the file(s) created, in
+  : the order they must be mapped to the dataset function
+* **Return type:**
+  Union[str, Tuple[str, …], List[str]]
+
+### *class* tabsdatasdk.LocalFileInput(path: str | List[str], format: str | dict | [FileFormat](#tabsdatasdk.format.FileFormat) = None, initial_last_modified: str | datetime = None)
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of local-file-based data inputs.
+
+#### format
+
+The format of the file. If not provided, it will be
+inferred from the file extension of the data.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### path
+
+The path where the files can be found. It can be a
+single path or a list of paths.
+
+* **Type:**
+  str | List[str]
+
+#### initial_last_modified
+
+If not None, only the files modified after
+this date and time will be considered.
+
+* **Type:**
+  str | None
+
+#### to_dict()
+
+Converts the LocalFileInput object to a dictionary.
+
+#### FORMAT_KEY *= 'format'*
+
+#### IDENTIFIER *= 'localfile-input'*
+
+#### LAST_MODIFIED_KEY *= 'initial_last_modified'*
+
+#### PATH_KEY *= 'path'*
+
+#### *class* SupportedFormats(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the supported formats for the LocalFileInput.
+
+#### csv *= <class 'tabsdatasdk.format.CSVFormat'>*
+
+#### json *= <class 'tabsdatasdk.format.NDJSONFormat'>*
+
+#### log *= <class 'tabsdatasdk.format.LogFormat'>*
+
+#### parquet *= <class 'tabsdatasdk.format.ParquetFormat'>*
+
+#### *property* format *: [FileFormat](#tabsdatasdk.format.FileFormat)*
+
+The format of the file or files. If not provided, it will be
+inferred  from the file extension in the path.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### *property* initial_last_modified *: str*
+
+The date and time after which the files were modified.
+
+* **Type:**
+  str
+
+#### *property* path *: str | List[str]*
+
+The path or paths to the files to load.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the LocalFileInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the LocalFileInput
+  : object: path, format, and initial_last_modified.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.LogFormat
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the log file format.
+
+#### IDENTIFIER *= 'log-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.MySQLInput(uri: str, query: str | List[str], credentials: dict | [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) | None = None, initial_values: dict | None = None)
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of MySQL-based data inputs.
+
+#### credentials
+
+The credentials required to access the
+MySQL database.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.UserPasswordCredentials)
+
+#### initial_values
+
+The initial values for the parameters in the SQL queries.
+
+* **Type:**
+  dict
+
+#### query
+
+The SQL query(s) to execute. If multiple queries are
+provided, they must be provided as a dictionary, with the parameter name in
+the registered function as the key and the SQL query as the value.
+
+* **Type:**
+  str | List[str]
+
+#### uri
+
+The URI of the database where the data is located.
+
+* **Type:**
+  str
+
+#### to_dict()
+
+Converts the MySQLInput object to a dictionary.
+
+#### CREDENTIALS_KEY *= 'credentials'*
+
+#### IDENTIFIER *= 'mysql-input'*
+
+#### INITIAL_VALUES_KEY *= 'initial_values'*
+
+#### QUERY_KEY *= 'query'*
+
+#### URI_KEY *= 'uri'*
+
+#### *property* credentials *: [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) | None*
+
+The credentials required to access the
+MySQLDatabase. If no credentials were provided, it will return None.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.UserPasswordCredentials) | None
+
+#### *property* initial_values *: dict*
+
+The initial values for the parameters in the SQL queries.
+
+* **Type:**
+  dict
+
+#### *property* query *: str | List[str]*
+
+The SQL query(s) to execute.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the MySQLInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the MySQLInput
+  : object: URI, data, and configurations.
+* **Return type:**
+  dict
+
+#### *property* uri *: str*
+
+The URI of the database where the data is located.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.MySQLOutput(uri: str, destination_table: List[str] | str, credentials: dict | [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials) = None)
+
+Bases: [`Output`](#tabsdatasdk.datasetfunction.Output)
+
+Class for managing the configuration of MySQL-based data outputs.
+
+#### credentials
+
+The credentials required to access the
+MySQL database.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.UserPasswordCredentials)
+
+#### destination_table
+
+The table(s) to create. If multiple tables
+are provided, they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### uri
+
+The URI of the database where the data is going to be stored.
+
+* **Type:**
+  str
+
+#### to_dict()
+
+Converts the MySQLOutput object to a dictionary
+
+#### CREDENTIALS_KEY *= 'credentials'*
+
+#### DESTINATION_TABLE_KEY *= 'destination_table'*
+
+#### IDENTIFIER *= 'mysql-output'*
+
+#### URI_KEY *= 'uri'*
+
+#### *property* credentials *: [UserPasswordCredentials](#tabsdatasdk.credentials.UserPasswordCredentials)*
+
+The credentials required to access the MySQLDatabase.
+
+* **Type:**
+  [UserPasswordCredentials](#tabsdatasdk.UserPasswordCredentials)
+
+#### *property* destination_table *: str | List[str]*
+
+The table(s) to create. If multiple tables are provided,
+they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the MySQLOutput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the MySQLOutput
+  : object: URI, destination table, and credentials.
+* **Return type:**
+  dict
+
+#### *property* uri *: str*
+
+The URI of the database where the data is going to be stored.
+
+* **Type:**
+  str
+
+### *class* tabsdatasdk.NDJSONFormat
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the log file format.
+
+#### IDENTIFIER *= 'ndjson-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.OutputPlugin
+
+Bases: `ABC`
+
+Abstract class for output plugins.
+
+#### trigger_output(\*args, \*\*kwargs)
+
+Trigger the exporting of the data. This function will receive the resulting
+data from the dataset function and must store it in the desired location.
+
+#### IDENTIFIER *= 'output-plugin'*
+
+#### to_dict() → dict
+
+Return a dictionary representation of the object. This is used to save the
+: object in a file.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+#### *abstract* trigger_output(\*args, \*\*kwargs)
+
+Trigger the exporting of the data. This function will receive the resulting data
+: from the dataset function and must store it in the desired location.
+
+* **Parameters:**
+  * **\*args** – The data to be exported
+  * **\*\*kwargs** – Additional parameters to be used in the export
+* **Returns:**
+  None
+
+### *class* tabsdatasdk.ParquetFormat
+
+Bases: [`FileFormat`](#tabsdatasdk.format.FileFormat)
+
+The class of the Parquet file format.
+
+#### IDENTIFIER *= 'parquet-format'*
+
+#### to_dict() → dict
+
+Returns the dictionary representation of the object.
+
+* **Returns:**
+  A dictionary with the object’s attributes.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.S3AccessKeyCredentials(aws_access_key_id: str | dict | [Secret](#tabsdatasdk.secret.Secret), aws_secret_access_key: str | dict | [Secret](#tabsdatasdk.secret.Secret))
+
+Bases: [`S3Credentials`](#tabsdatasdk.credentials.S3Credentials)
+
+Credentials class to store the credentials needed to access an S3 bucket
+using access key credentials (access key id and secret access key).
+
+#### aws_access_key_id
+
+The AWS access key id.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### aws_secret_access_key
+
+The AWS secret access key.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the S3AccessKeyCredentials object to a dictionary
+
+#### AWS_ACCESS_KEY_ID_KEY *= 'aws_access_key_id'*
+
+#### AWS_SECRET_ACCESS_KEY_KEY *= 'aws_secret_access_key'*
+
+#### IDENTIFIER *= 's3_access_key-credentials'*
+
+#### *property* aws_access_key_id *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The AWS access key id.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### *property* aws_secret_access_key *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The AWS secret access key.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the S3AccessKeyCredentials object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the S3AccessKeyCredentials object.
+* **Return type:**
+  dict
+
+### *class* tabsdatasdk.S3Input(uri: str | List[str], credentials: dict | [S3Credentials](#tabsdatasdk.credentials.S3Credentials), format: str | dict | [FileFormat](#tabsdatasdk.format.FileFormat) = None, initial_last_modified: str | datetime = None)
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of S3-file-based data inputs.
+
+#### format
+
+The format of the file. If not provided, it will be
+inferred from the file extension of the data.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### uri
+
+The URI of the files with format: ‘s3://path/to/files’.
+It can be a single URI or a list of URIs.
+
+* **Type:**
+  str | List[str]
+
+#### credentials
+
+The credentials required to access the S3 bucket.
+
+* **Type:**
+  [S3Credentials](#tabsdatasdk.credentials.S3Credentials)
+
+#### initial_last_modified
+
+If provided, only the files
+modified after this date and time will be considered.
+
+* **Type:**
+  str | datetime.datetime
+
+#### to_dict()
+
+Converts the S3Input object to a dictionary.
+
+#### CREDENTIALS_KEY *= 'credentials'*
+
+#### FORMAT_KEY *= 'format'*
+
+#### IDENTIFIER *= 's3-input'*
+
+#### LAST_MODIFIED_KEY *= 'initial_last_modified'*
+
+#### *class* SupportedFormats(value, names=None, \*, module=None, qualname=None, type=None, start=1, boundary=None)
+
+Bases: `Enum`
+
+Enum for the supported formats for the S3Input.
+
+#### csv *= <class 'tabsdatasdk.format.CSVFormat'>*
+
+#### json *= <class 'tabsdatasdk.format.NDJSONFormat'>*
+
+#### log *= <class 'tabsdatasdk.format.LogFormat'>*
+
+#### parquet *= <class 'tabsdatasdk.format.ParquetFormat'>*
+
+#### URI_KEY *= 'uri'*
+
+#### *property* credentials *: [S3Credentials](#tabsdatasdk.credentials.S3Credentials)*
+
+The credentials required to access the S3 bucket.
+
+* **Type:**
+  [S3Credentials](#tabsdatasdk.credentials.S3Credentials)
+
+#### *property* format *: [FileFormat](#tabsdatasdk.format.FileFormat)*
+
+The format of the file. If not provided, it will be inferred from
+the file.
+
+* **Type:**
+  [FileFormat](#tabsdatasdk.format.FileFormat)
+
+#### *property* initial_last_modified *: str*
+
+The date and time after which the files were modified.
+
+* **Type:**
+  str
+
+#### to_dict() → dict
+
+Converts the FileInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the S3Input
+  : object: URI, format, credentials and last_modified time.
+* **Return type:**
+  dict
+
+#### *property* uri *: str | List[str]*
+
+‘s3://path/to/files’.
+
+* **Type:**
+  str | List[str]
+* **Type:**
+  The URI of the files with format
+
+### *class* tabsdatasdk.TableInput(uri: str | List[str] | [URI](#tabsdatasdk.uri.URI) | List[[URI](#tabsdatasdk.uri.URI)])
+
+Bases: [`Input`](#tabsdatasdk.datasetfunction.Input)
+
+Class for managing the configuration of table-based data inputs.
+
+#### uri
+
+The URI(s) of the table(s) to load.
+
+* **Type:**
+  [URI](#tabsdatasdk.URI) | List[[URI](#tabsdatasdk.URI)]
+
+#### to_dict()
+
+Converts the TableInput object to a dictionary.
+
+#### IDENTIFIER *= 'table-input'*
+
+#### URI_KEY *= 'uri'*
+
+#### to_dict() → dict
+
+Converts the TableInput object to a dictionary with all the relevant
+: information.
+
+* **Returns:**
+  A dictionary with the relevant information of the Output
+  : object.
+* **Return type:**
+  dict
+
+#### *property* uri *: [URI](#tabsdatasdk.uri.URI) | List[[URI](#tabsdatasdk.uri.URI)]*
+
+The URI(s) of the table(s) to load.
+
+* **Type:**
+  [URI](#tabsdatasdk.URI) | List[[URI](#tabsdatasdk.URI)]
+
+### *class* tabsdatasdk.TableOutput(table: str | List[str])
+
+Bases: [`Output`](#tabsdatasdk.datasetfunction.Output)
+
+Class for managing the configuration of table-based data outputs.
+
+#### table
+
+The table(s) to create. If multiple tables are
+provided, they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict()
+
+Converts the TableOutput object to a dictionary
+
+#### IDENTIFIER *= 'table-output'*
+
+#### TABLE_KEY *= 'table'*
+
+#### *property* table *: str | List[str]*
+
+The table(s) to create. If multiple tables are provided,
+they must be provided as a list.
+
+* **Type:**
+  str | List[str]
+
+#### to_dict() → dict
+
+Converts the TableOutput object to a dictionary with all the relevant
+information.
+
+### *class* tabsdatasdk.TabsdataServer(url: str, username: str, password: str)
+
+Bases: `object`
+
+This class represents the TabsdataServer.
+
+* **Parameters:**
+  * **url** (*str*) – The url of the server.
+  * **username** (*str*) – The username of the user.
+  * **password** (*str*) – The password of the user.
+
+#### dataset_create(datastore_name: str, function_path: str, description: str = None, path_to_bundle: str = None, requirements: str = None, local_packages: List[str] | str | None = None) → None
+
+Create a dataset in the server.
+
+* **Parameters:**
+  * **datastore_name** (*str*) – The name of the datastore.
+  * **function_path** (*str*) – The path to the function. It should be in the form of
+    /path/to/file.py::function_name.
+  * **description** (*str* *,* *optional*) – The description of the dataset.
+  * **path_to_bundle** (*str* *,* *optional*) – The path that has to be bundled and sent
+    to the server. If None, the folder containing the function will be
+    bundled.
+  * **requirements** (*str* *,* *optional*) – Path to a custom requirements.yaml file
+    with the packages, python version and other information needed to
+    create the Python environment for the function to run in the backend.
+    If not provided, this information will be inferred from the current
+    execution session.
+  * **local_packages** (*List* *[**str* *]*  *|* *str* *,* *optional*) – A list of paths to local
+    Python packages that need to be included in the bundle. Each path
+    must exist and be a valid Python package that can be installed by
+    running pip install /path/to/package.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the dataset could not be created.
+
+#### dataset_delete(datastore_name, dataset_name) → None
+
+Delete a dataset in the server.
+
+* **Parameters:**
+  * **datastore_name** (*str*) – The name of the datastore.
+  * **dataset_name** (*str*) – The name of the dataset.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the dataset could not be deleted.
+
+#### dataset_get(datastore_name, dataset_name) → [Dataset](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Dataset)
+
+Get a dataset in the server.
+
+* **Parameters:**
+  * **datastore_name** (*str*) – The name of the datastore.
+  * **dataset_name** (*str*) – The name of the dataset.
+* **Returns:**
+  The dataset.
+* **Return type:**
+  [Dataset](#tabsdatasdk.Dataset)
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the dataset could not be obtained.
+
+#### dataset_list_functions(datastore_name, dataset_name) → List[[Function](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Function)]
+
+List the functions in a dataset.
+
+* **Parameters:**
+  * **datastore_name** (*str*) – The name of the datastore.
+  * **dataset_name** (*str*) – The name of the dataset.
+* **Returns:**
+  The list of functions in the dataset.
+* **Return type:**
+  List[[Function](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Function)]
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the functions could not be listed.
+
+#### dataset_trigger(datastore_name, dataset_name) → Response
+
+Trigger a dataset in the server.
+
+* **Parameters:**
+  * **datastore_name** (*str*) – The name of the datastore.
+  * **dataset_name** (*str*) – The name of the dataset.
+* **Returns:**
+  The response of the trigger request.
+* **Return type:**
+  requests.Response
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the dataset could not be triggered.
+
+#### dataset_update(datastore_name: str, dataset_name: str, function_path: str, description: str, directory_to_bundle: str = None, requirements: str = None, local_packages: List[str] | str | None = None) → None
+
+Update a dataset in the server.
+
+* **Parameters:**
+  * **datastore_name** (*str*) – The name of the datastore.
+  * **dataset_name** (*str*) – The name of the dataset.
+  * **function_path** (*str*) – The path to the function. It should be in the form of
+    /path/to/file.py::function_name.
+  * **description** (*str*) – The new description of the dataset.
+  * **directory_to_bundle** (*str* *,* *optional*) – The path that has to be bundled and
+    sent to the server. If None, the folder containing the function will be
+    bundled.
+  * **requirements** (*str* *,* *optional*) – Path to a custom requirements.yaml file
+    with the packages, python version and other information needed to
+    create the Python environment for the function to run in the backend.
+    If not provided, this information will be inferred from the current
+    execution session.
+  * **local_packages** (*List* *[**str* *]*  *|* *str* *,* *optional*) – A list of paths to local
+    Python packages that need to be included in the bundle. Each path
+    must exist and be a valid Python package that can be installed by
+    running pip install /path/to/package.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the dataset could not be updated.
+
+#### datastore_create(name: str, description: str = None) → None
+
+Create a datastore in the server.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the datastore.
+  * **description** (*str* *,* *optional*) – The description of the datastore.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the datastore could not be created.
+
+#### datastore_delete(name: str) → None
+
+Delete a datastore in the server.
+
+* **Parameters:**
+  **name** (*str*) – The name of the datastore.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the datastore could not be deleted.
+
+#### datastore_get(name: str) → [Datastore](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Datastore)
+
+Get a datastore in the server.
+
+* **Parameters:**
+  **name** (*str*) – The name of the datastore.
+* **Returns:**
+  The datastore.
+* **Return type:**
+  [Datastore](#tabsdatasdk.Datastore)
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the datastore could not be obtained.
+
+#### datastore_list_dataset(datastore_name) → List[[Dataset](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Dataset)]
+
+List the datasets in a datastore.
+
+* **Parameters:**
+  **datastore_name** (*str*) – The name of the datastore.
+* **Returns:**
+  The list of datasets in the datastore.
+* **Return type:**
+  List[[Dataset](#tabsdatasdk.Dataset)]
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the datasets could not be listed.
+
+#### datastore_update(name: str, new_name=None, new_description: str = None) → None
+
+Update a datastore in the server.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the datastore.
+  * **new_name** (*str* *,* *optional*) – The new name of the datastore.
+  * **new_description** (*str* *,* *optional*) – The new description of the datastore.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the datastore could not be updated.
+
+#### *property* datastores *: List[[Datastore](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.Datastore)]*
+
+Get the list of datastores in the server. This list is obtained every time the
+: property is accessed, so sequential accesses to this property in the same
+  object might yield different results.
+
+* **Returns:**
+  The list of datastores in the server.
+* **Return type:**
+  List[[Datastore](#tabsdatasdk.Datastore)]
+
+#### *property* execution_plans *: List[[ExecutionPlan](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ExecutionPlan)]*
+
+Get the list of execution plans in the server. This list is obtained every time
+: the property is accessed, so sequential accesses to this property in the
+  same object might yield different results.
+
+* **Returns:**
+  The list of execution plans in the server.
+* **Return type:**
+  List[[ExecutionPlan](#tabsdatasdk.ExecutionPlan)]
+
+#### *property* status *: [ServerStatus](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ServerStatus)*
+
+Get the status of the server. This status is obtained every time the property is
+: accessed, so sequential accesses to this property in the same object might
+  yield different results.
+
+* **Returns:**
+  The status of the server.
+* **Return type:**
+  [ServerStatus](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.ServerStatus)
+
+#### user_create(name: str, password: str, full_name: str = None, email: str = None, enabled: bool = True) → None
+
+Create a user in the server.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the user.
+  * **password** (*str*) – The password of the user.
+  * **full_name** (*str* *,* *optional*) – The full name of the user.
+  * **email** (*str* *,* *optional*) – The email of the user.
+  * **enabled** (*bool* *,* *optional*) – Whether the user is enabled or not.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the user could not be created.
+
+#### user_delete(name: str) → None
+
+Delete a user in the server.
+
+* **Parameters:**
+  **name** (*str*) – The name of the user.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the user could not be deleted.
+
+#### user_get(name: str) → [User](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.User)
+
+Get a user in the server.
+
+* **Parameters:**
+  **name** (*str*) – The name of the user.
+* **Returns:**
+  The user.
+* **Return type:**
+  [User](#tabsdatasdk.User)
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the user could not be obtained.
+
+#### user_update(name: str, full_name: str = None, email: str = None, enabled: bool = None) → None
+
+Update a user in the server.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the user.
+  * **full_name** (*str* *,* *optional*) – The full name of the user.
+  * **email** (*str* *,* *optional*) – The email of the user.
+  * **enabled** (*bool* *,* *optional*) – Whether the user is enabled or not.
+* **Raises:**
+  [**APIServerError**](tabsdatasdk.api.md#tabsdatasdk.api.api_server.APIServerError) – If the user could not be updated.
+
+#### *property* users *: List[[User](tabsdatasdk.api.md#tabsdatasdk.api.tabsdata_server.User)]*
+
+Get the list of users in the server. This list is obtained every time the
+: property is accessed, so sequential accesses to this property in the same
+  object might yield different results.
+
+* **Returns:**
+  The list of users in the server.
+* **Return type:**
+  List[[User](#tabsdatasdk.User)]
+
+### *class* tabsdatasdk.URI(datastore: str | None = None, dataset: str | None = None, table: str | None = None, version: str | [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None = None)
+
+Bases: `object`
+
+URI class to represent a Tabs Data URI. The URI is composed of a datastore, a
+: dataset, a table and a version. The URI is represented as
+  td://datastore/dataset/table@version or td://dataset/table@version. The
+  datastore, dataset and table are optional, but at least one of them must be
+  present. The version is optional. The datastore, dataset and table must be
+  strings. The version can be a string, a Version object, a VersionList object
+  or a VersionRange object.
+
+#### datastore
+
+The datastore of the URI.
+
+* **Type:**
+  str
+
+#### dataset
+
+The dataset of the URI.
+
+* **Type:**
+  str
+
+#### table
+
+The table of the URI.
+
+* **Type:**
+  str
+
+#### version
+
+The version of the URI.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None
+
+#### to_string() → str
+
+Return the URI as a string.
+
+#### *property* dataset *: str*
+
+The dataset of the URI.
+
+* **Type:**
+  str
+
+#### *property* datastore *: str*
+
+The datastore of the URI.
+
+* **Type:**
+  str
+
+#### *property* table *: str*
+
+The table of the URI.
+
+* **Type:**
+  str
+
+#### to_string() → str
+
+Return the URI as a string.
+
+* **Returns:**
+  The URI as a string.
+* **Return type:**
+  str
+
+#### *property* version *: [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None*
+
+The version(s) of the URI.
+
+* **Type:**
+  [Version](#tabsdatasdk.uri.Version) | [VersionList](#tabsdatasdk.uri.VersionList) | [VersionRange](#tabsdatasdk.uri.VersionRange) | None
+
+### *class* tabsdatasdk.User(name: str, full_name: str, email: str, enabled: bool, \*\*kwargs)
+
+Bases: `object`
+
+This class represents a user in the TabsdataServer.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the user.
+  * **full_name** (*str*) – The full name of the user.
+  * **email** (*str*) – The email of the user.
+  * **enabled** (*bool*) – Whether the user is enabled or not.
+  * **\*\*kwargs** – Additional keyword arguments.
+
+### *class* tabsdatasdk.UserPasswordCredentials(user: str | dict | [Secret](#tabsdatasdk.secret.Secret), password: str | dict | [Secret](#tabsdatasdk.secret.Secret))
+
+Bases: [`Credentials`](#tabsdatasdk.credentials.Credentials)
+
+Credentials class to store a user and password pair.
+
+#### user
+
+The user.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### password
+
+The password.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the UserPasswordCredentials object to a dictionary.
+
+#### IDENTIFIER *= 'user_password-credentials'*
+
+#### PASSWORD_KEY *= 'password'*
+
+#### USER_KEY *= 'user'*
+
+#### *property* password *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The password.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+#### to_dict() → dict
+
+Convert the UserPasswordCredentials object to a dictionary.
+
+* **Returns:**
+  A dictionary representation of the UserPasswordCredentials object.
+* **Return type:**
+  dict
+
+#### *property* user *: [Secret](#tabsdatasdk.secret.Secret)*
+
+The user.
+
+* **Type:**
+  [Secret](#tabsdatasdk.secret.Secret)
+
+### tabsdatasdk.dataset(name: str, input: dict | [Input](#tabsdatasdk.datasetfunction.Input) | [InputPlugin](#tabsdatasdk.plugin.InputPlugin) | None = None, output: dict | [Output](#tabsdatasdk.datasetfunction.Output) | [OutputPlugin](#tabsdatasdk.plugin.OutputPlugin) | None = None, trigger_by: str | [URI](#tabsdatasdk.uri.URI) | None = None) → callable
+
+Decorator to set the input, output  and trigger_by parameters of a function and
+: convert it to a DatasetFunction.
+
+* **Parameters:**
+  * **name** (*str*) – The name of the dataset.
+  * **input** (*dict* *|* [*Input*](#tabsdatasdk.datasetfunction.Input) *|* [*InputPlugin*](#tabsdatasdk.InputPlugin) *|* *None*) – Where to obtain the input of the
+    function. It can be a dictionary, an Input, an InputPlugin or None.
+  * **output** (*dict* *|* [*Output*](#tabsdatasdk.datasetfunction.Output) *|* [*OutputPlugin*](#tabsdatasdk.OutputPlugin) *|* *None*) – Where to store the output of
+    the function. It can be a dictionary, an Output, an OutputPlugin or None.
+  * **trigger_by** (*str* *|* [*URI*](#tabsdatasdk.URI) *|* *None*) – The trigger to execute the function. It can be a
+    dataset in the system or None (in which case it must be triggered manually).
+* **Returns:**
+  The function converted to a DatasetFunction.
+* **Return type:**
+  callable
